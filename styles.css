@@ -1,0 +1,24 @@
+
+header{text-align: center;
+    background-color: #E6E6E6;}
+
+.titulos{
+    background-color: #C4C4C4 ;
+    color: #005677;
+    letter-spacing: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#titulo{text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+div{Height: 100px; }
+
+footer{background-color: #005677;
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#foot{color: white; }
+
