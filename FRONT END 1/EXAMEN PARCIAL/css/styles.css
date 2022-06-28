@@ -1,1 +1,297 @@
-body {background-image: url(../img/bg-tablet-pattern.svg);}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;700&display=swap');
+
+
+* {
+    box-sizing: border-box;  
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #242E52;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(../img/bg-tablet-pattern.svg);
+}
+
+/* ENCABEZADO */
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+nav img{
+    height: fit-content;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+} 
+
+nav ul li a{
+    margin-left: 5vh;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 75%;
+}
+
+/* PRIMERA PARTE CON GRAFICOS */
+
+
+#principal{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+#principal img {
+    width : 400px ;
+    height: 350px;
+    
+}
+
+.titulo1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.parrafo{
+    color: #B3B2B7;
+    width: 80%;
+    font-size: 12px;
+    margin:25px 0px;
+    text-align: left;
+    line-height: 20px;
+}
+
+
+
+
+/* SEGUNDA PARTE */
+/* SELE PUEDE AGREGAR UN DIV MAS PARA hACERLO MEJOR */
+#secundario{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 100px;
+}
+
+.titulo2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.titulo3{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.num{
+    display: flex;
+    align-items: center;
+}
+
+.num-deco{
+    color: white;
+    background-color:#F3603B;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    width: 40px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center; 
+    margin: 8px;
+}
+.parrafo2{
+    color: #B3B2B7;
+    font-size: 12px;
+    text-align: left;
+    line-height: 20px;
+    padding-left: 50px;
+}
+
+
+/* TERCERA PARTE DESCRIPCION DE GENTE */
+
+#personas-seccion>div{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#personas-seccion>h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.personas{
+    text-align: center; 
+}
+
+.personas>img{
+    height: 70px;
+}
+
+.personas>h6{
+    font-size: 20px;
+}
+.personas>p{
+    font-size: 12px;
+    color: #B3B2B7;
+}
+
+
+#button3{
+    margin: 70px;
+}
+
+
+
+/* CUARTA PARTE NARANJA */
+#foot{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #F3603B;
+    padding: 30px;
+}
+
+#frase{
+    color: white;
+    font-size: 25px;
+
+}
+
+
+.button-b{
+    color: #F3603B;
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px;
+    font-size: 11px;
+    
+}
+
+
+
+/* FOOTER */
+#footer{
+    display: flex;
+    align-items:center;
+
+    justify-content:space-around;
+    background-color: #1E1E26  ;
+}
+
+.img-footer{
+    align-items: center;
+}
+
+.redes{
+    margin-top:60px; 
+}
+
+.redes img{
+    margin:0px 4px;
+}
+
+
+.links{
+    list-style: none;
+    margin: 40px;
+}
+
+.links li {
+    margin: 10px;
+}
+    
+
+.links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+ /* FORMULARIO */
+form{
+    display: flex;  
+    flex-direction: column-reverse;
+
+}
+.form{
+    display: flex;
+    
+}
+
+form label{
+    color: rgb(255, 255, 255);
+}
+
+#space{
+    border-radius: 50px;
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+#go {
+    border-radius: 50px;
+    width: 50px;
+    font-size: 10px;
+    padding: 10px;
+    background-color: #F3603B;
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+
+#valid-email{
+    color: #F3603B;
+    font-size: 10px;
+    text-indent: 10px;
+    margin-top: 5px;
+}
+
+#copy{
+    color:#8C8C94;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+/* BOTONES */
+.button-a{
+    color: white;
+    background-color:#F3603B;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px;
+    font-size: 11px;   
+}
+
+
+
+
+
+/* poner color principal,secundario */
+
+
+
+
