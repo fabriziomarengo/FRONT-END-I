@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-
 <body>
-
     <header>
+        <div class="hamburger">
+            <img src="img/icon-hamburger.svg" alt="">
+        </div>
         <nav>
             <img src="img/logo.svg" alt="manage logo" id="img-head">
                 <ul class="nav-bar">
@@ -21,16 +22,19 @@
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Community</a></li>
                 </ul>
-            <button  class="button-a">Get Started</button>
+            <div class="eliminar">
+                <button  class="button-a" class="eliminar"><a href=""> Get Started</a></button>
+            </div>
         </nav>
     </header>
-
     <main>
         <section id="principal">
             <div>
                 <h1 class="titulo1">Bring everyone <br> together to build <br> better products.</h1>
-                <p class="parrafo">Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping the <br> large team goals in view.</p>
-                <button class="button-a">Get started</button>
+                <div>
+                    <p class="parrafo">Manage makes it simple for software teams <br> to plan day-to-day tasks while keeping the <br> large team goals in view.</p>
+                    <button class="button-a"><a href=""> Get Started</a></button>
+                </div>
             </div>
             <img src="img/illustration-intro.svg" alt="illustration-intro">
         </section>
@@ -65,84 +69,86 @@
         </section>
         <section id="personas-seccion">
             <h3>What they´ve said</h3>
-            <div>
-                <div class="personas">
+            <div class="personas">
+                <div class="persona1">
                     <img src="img/avatar-ali.png" alt="avatar-ali">
                     <h6>Ali Bravo</h6>
                     <p>“Manage has supercharged our team´s workflow. The <br> ability to maintain visibility on larger milestones at all times <br> keeps everyone motivated.”</p>
                 </div>
-                <div class="personas">
+                <div  class="persona2" >
                     <img src="img/avatar-anisha.png" alt="avatar-ali">
                     <h6>Anasha Li</h6>
                     <p>“We have been able to cancel so many other subscriptions <br> since using manage. There ir no more cross-channel <br> confusion and everyone is much more focused.”</p>
                 </div>
-                <div class="personas">
+                <div  class="persona3">
                     <img src="img/avatar-richard.png" alt="avatar-richard">
                     <h6>Richards Watts</h6>
                     <p>“Manage allows us to provide structure and process. It <br> keeps us organized and focused. I can´t stop recommending <br> them to everyone i talk to!”</p>
                 </div>
             </div>
             <div>
-                <button class="button-a" id="button3">Get Started</button>
+                <button class="button-a" id="button3"><a href=""> Get Started</a></button>
             </div>
             </section>
-            
             <section id="foot">
-                <div >
+                <div>
                     <h3 id="frase">Simplify how your team <br> words today.</h3>
                 </div>
                 <div>
-                <button class="button-b">Get Started</button>
+                <button class="button-b"><a href=""> Get Started</a></button>
                 </div>
         </section>
     </main>
-
-    <footer id="footer">
-        <section>
-            <div class="img-footer">
-                <img src="img/logo_footer.png" alt="manage logo"><br>
-                <div class="redes"> 
-                    <a href=""><img src="img/icon-facebook.svg" alt="icon facebook"></a>
-                    <a href=""><img src="img/icon-youtube.svg" alt="icon youtube"></a>
-                    <a href=""><img src="img/icon-twitter.svg" alt="icon twitter"></a>
-                    <a href=""><img src="img/icon-pinterest.svg" alt="icon pinterest"></a>
-                    <a href=""><img src="img/icon-instagram.svg" alt="icon instagram"></a>
+    <footer>
+            <div id="posicion4">
+                <p id="copy">Copyright 2020. All Rights Reserved</p>
             </div>
+            <div class="posicion3">
+                    <div class="img-footer">
+                        <div>
+                            <img src="img/logo_footer.png" alt="manage logo"><br>
+                        </div>
+                        <div class="redes"> 
+                            <a href="#"><img src="img/icon-facebook.svg" alt="icon facebook"></a>
+                            <a href="#"><img src="img/icon-youtube.svg" alt="icon youtube"></a>
+                            <a href="#"><img src="img/icon-twitter.svg" alt="icon twitter"></a>
+                            <a href="#"><img src="img/icon-pinterest.svg" alt="icon pinterest"></a>
+                            <a href="#"><img src="img/icon-instagram.svg" alt="icon instagram"></a>
+                        </div>
+                    </div>
             </div>
-        </section>
-        <section>
-            <div>
-                <ul  class="links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href=""> About Us</a></li>
-                </ul>
-        </div>
-        </section>
-        <section>
-            <div>
-                <ul  class="links">
-                    <li><a href="">Careers</a> </li>
-                    <li><a href="">Community</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
+            <div id="links-todos" class="posicion2">
+                    <div>
+                        <ul  class="links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#"> About Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul  class="links">
+                            <li><a href="#">Careers</a> </li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
             </div>
-        </section>
-        <section>
             <div>
-                <form action="">
-                <label for="email" id="valid-email">Please insert a valid email</label>
-                <div class="form">
-                    <input id="space" type="text" id="email" name="email" placeholder="   johnmadden/mail" minlength="5">
-                    <input id="go" type="submit" value="GO">
+                <div class="posicion1">
+                    <div class="formulario">
+                        <form action="/registro" method="post">
+                        <label for="email" id="valid-email">Please insert a valid email</label>
+                        <div class="form">
+                            <input id="space" type="text" id="email" name="email" placeholder="   johnmadden/mail" minlength="5">
+                            <input id="go" type="submit" value="GO">
+                        </div>
+                        </form>
+                        <div id="solopc">
+                            <p id="copy">Copyright 2020. All Rights Reserved</p>
+                        </div>
+                    </div>
                 </div>
-                </form>
-            </div>
-            <p id="copy">Copyright 2020. All Rights Reserved</p>
-        </section>
     </footer>
-
 </body>
-
 </html>

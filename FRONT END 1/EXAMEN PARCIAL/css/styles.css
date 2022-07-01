@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;700&display=swap');
 
-
 * {
     box-sizing: border-box;  
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -10,6 +9,8 @@
 
 body {
     background-image: url(../img/bg-tablet-pattern.svg);
+    background-repeat :no-repeat;
+    background-size: cover;
 }
 
 /* ENCABEZADO */
@@ -40,7 +41,6 @@ nav ul li a{
 
 /* PRIMERA PARTE CON GRAFICOS */
 
-
 #principal{
     display: flex;
     justify-content:space-around;
@@ -51,14 +51,12 @@ nav ul li a{
 #principal img {
     width : 400px ;
     height: 350px;
-    
 }
 
 .titulo1{
     font-size: 40px;
     font-weight: bold;
 }
-
 
 .parrafo{
     color: #B3B2B7;
@@ -68,9 +66,6 @@ nav ul li a{
     text-align: left;
     line-height: 20px;
 }
-
-
-
 
 /* SEGUNDA PARTE */
 /* SELE PUEDE AGREGAR UN DIV MAS PARA hACERLO MEJOR */
@@ -115,7 +110,6 @@ nav ul li a{
     padding-left: 50px;
 }
 
-
 /* TERCERA PARTE DESCRIPCION DE GENTE */
 
 #personas-seccion>div{
@@ -131,29 +125,27 @@ nav ul li a{
 }
 
 .personas{
-    text-align: center; 
+    text-align: center;
 }
 
-.personas>img{
+.personas>div>img{
     height: 70px;
 }
 
-.personas>h6{
+.personas>div>h6{
     font-size: 20px;
 }
-.personas>p{
-    font-size: 12px;
+.personas>div>p{
+    font-size: 14px;
     color: #B3B2B7;
 }
 
-
 #button3{
-    margin: 70px;
+    margin: 70px;  
 }
 
-
-
 /* CUARTA PARTE NARANJA */
+
 #foot{
     display: flex;
     align-items: center;
@@ -165,29 +157,20 @@ nav ul li a{
 #frase{
     color: white;
     font-size: 25px;
-
 }
 
-
 .button-b{
-    color: #F3603B;
     background-color: white;
     border-radius: 50px;
     border: none;
-    font-weight: bold;
     width: 120px;
     padding: 10px;
-    font-size: 11px;
-    
 }
 
-
-
 /* FOOTER */
-#footer{
+footer{
     display: flex;
     align-items:center;
-
     justify-content:space-around;
     background-color: #1E1E26  ;
 }
@@ -204,6 +187,13 @@ nav ul li a{
     margin:0px 4px;
 }
 
+#linkfoot{
+    display: flex;
+}
+
+#links-todos{
+    display: flex;
+}
 
 .links{
     list-style: none;
@@ -212,8 +202,7 @@ nav ul li a{
 
 .links li {
     margin: 10px;
-}
-    
+} 
 
 .links li a{
     color: white;
@@ -221,15 +210,26 @@ nav ul li a{
     font-size: 13px;
 }
 
+#posicion4{
+    display: none;
+}
+
+#copy{
+    color:#8C8C94;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
  /* FORMULARIO */
+
 form{
     display: flex;  
     flex-direction: column-reverse;
-
 }
+
 .form{
     display: flex;
-    
 }
 
 form label{
@@ -244,8 +244,6 @@ form label{
     padding: 5px;
 }
 
-
-
 #go {
     border-radius: 50px;
     width: 50px;
@@ -258,7 +256,6 @@ form label{
     margin-left: 10px;
 }
 
-
 #valid-email{
     color: #F3603B;
     font-size: 10px;
@@ -266,32 +263,156 @@ form label{
     margin-top: 5px;
 }
 
-#copy{
-    color:#8C8C94;
-    font-size: 12px;
-    margin-top: 50px;
-    margin-left: 50px;
-
-}
-
 /* BOTONES */
 .button-a{
-    color: white;
     background-color:#F3603B;
     border-radius: 50px;
     border: none;
-    font-weight: bold;
     width: 120px;
     padding: 10px;
-    font-size: 11px;   
+}
+
+.button-a a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px; 
+    font-weight: bold;
+}
+
+.button-b a{
+    text-decoration: none;
+    color:#F3603B;
+    font-size: 12px; 
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: rgb(44, 47, 47);
+}
+
+#go:hover{
+    background-color: rgb(136, 142, 142);
+}
+
+a:hover{
+    color:#F3603B
+}
+
+/* SACAR HABURGUESA PARA VERSION CELU */
+.hamburger{
+    display: none;
 }
 
 
+@media (max-width: 375px){
+
+    body {
+        
+        background-repeat: repeat;
+        background-size: 100%;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    .eliminar{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        justify-content:space-around;
+    }
+
+    .hamburger{
+        display:flex ;
+        order:2;
+    }
+
+    #principal{
+        flex-direction:column-reverse;
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+        padding-right: 20%;
+    }
+
+    .parrafo{
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
+        padding: 5%;
+    }
+
+    #secundario{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    .parrafo2{
+        width: 100%;
+        padding: 5%;
+        text-align: left;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    br {
+        display: none;
+    }
+
+/* FALTAN PERSONAS  mMENUUUUUUUUUUU*/
+
+    .persona2, .persona3{
+        display: none;
+    }
 
 
+    #foot{
+        flex-direction:column;
+        text-align: center
+    }
 
-/* poner color principal,secundario */
+    #foot>div{
+        width: 72%;
+    }
+
+/* footer */
+
+    footer{
+        flex-direction: column;
+    }
+
+    #links-todos{
+        display: flex;
+        border: #f6f6f6 1px;
+    }
+
+    #solopc{
+        display: none;
+    }
 
 
+    .posicion1{  
+        margin: 8%;
+        order: 1;
+    }
 
+    .posicion2{
+        order: 2;
+        margin-right: 10%;
+    }
+    .posicion3{
+        order: 3;
+    }
 
+    #posicion4{
+        order: 4;
+        display: flex;
+        margin-right: 10%;
+    }
+}
